@@ -1,0 +1,43 @@
+//layouts
+@mixin center-align {
+	-webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    position: relative;
+    top: 50%;
+    text-align: center;
+}
+
+//animations
+@mixin animation-transition {
+	-webkit-transition: all 250ms ease-in-out;  
+	-moz-transition: all 250ms ease-in-out; 
+	-o-transition: all 250ms ease-in-out;  
+	-ms-transition: all 250ms ease-in-out; 
+	transition: all 250ms ease-in-out;
+}
+
+@mixin animation-transition-500ms {
+	-webkit-transition: all 500ms ease-in-out;  
+	-moz-transition: all 500ms ease-in-out; 
+	-o-transition: all 500ms ease-in-out;  
+	-ms-transition: all 500ms ease-in-out; 
+	transition: all 500ms ease-in-out;
+}
+
+//breakpoints
+@mixin for-phone-only {
+  @media (max-width: 599px) { @content; }
+}
+@mixin for-tablet-portrait-down {
+  @media (max-width: 600px) { @content; }
+}
+@mixin for-tablet-landscape-down {
+  @media (max-width: 900px) { @content; }
+}
+@mixin for-desktop-down {
+  @media (max-width: 1200px) { @content; }
+}
+@mixin for-big-desktop-down {
+  @media (max-width: 1800px) { @content; }
+}

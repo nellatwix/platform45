@@ -1,0 +1,18 @@
+body {
+	font-size: 18px;
+	font-family: $arial;
+	color: $black;
+}
+
+h1 {
+	font-size: 2em;
+}
+
+p {
+	font-size: 1.222em;
+	line-height: 1.26em;
+	@include for-phone-only {
+		font-size: 16px;
+		line-height: 16px;
+	}
+}

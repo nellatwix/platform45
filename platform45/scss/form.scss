@@ -1,0 +1,110 @@
+form {
+	padding: 0 10%;
+	text-align: left;
+	font-size: 0.888em;
+	color: $charcoal-grey;
+  @include for-phone-only {
+        padding: 0 5%;
+        margin-top: 50px;
+    }
+}
+
+input {
+	width: 72%;
+	height: 53px;
+	border-radius: 5.3px;
+  background-color: $pale-grey;
+  border: solid 1.2px $pale-grey;
+  margin-bottom: 25px;
+  padding: 0 3%;
+  font-size: 0.888em;
+  @include for-phone-only {
+    width: 94%;
+    margin-top: 10px;
+  }
+}
+
+input:focus {
+	border: solid 1.2px $cloudy-blue;
+	outline: none;
+	background-color: $pale-grey-two;
+	color: $black;
+	@include animation-transition;
+}
+
+input[type=radio] {
+	width: inherit;
+  cursor: pointer;
+	height: inherit;
+	position: absolute;
+    opacity: 0;
+}
+
+input[type=submit] {
+	width: 30%;
+  cursor: pointer;
+	background-color: $tiffany-blue;
+	border: solid 1.2px $tiffany-blue;
+	color: white;
+  @include for-phone-only {
+    width: 100%;
+  }
+}
+
+input[type=reset] {
+	width: 30%;
+  cursor:pointer;
+	margin-right: 15px;
+  @include for-phone-only {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+label {
+	width: 20%;
+	display: inline-block;
+	font-size: 0.888em;
+	text-align: left;
+  @include for-phone-only {
+    width: 100%;
+  }
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: $cloudy-blue-two;
+    opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: $cloudy-blue-two;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: $cloudy-blue-two;
+}
+
+.message {
+    display: none;
+}
+
+.error {
+    position: relative;
+    top: -20px;
+    color: orange;
+    text-align: right;
+    padding-top: -25px;
+    margin-right: 10px;
+    font-size: 12px;
+    color: $orange;
+}
+
+.message.error.active {
+	display: block;
+}
+
+
+
+
+
+
